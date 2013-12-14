@@ -15,21 +15,6 @@ import android.view.Menu;
 public class MainGameActivity extends SimpleBaseGameActivity {
 	Camera camera; 
 	Scene scene; 
-	
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_game);
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main_game, menu);
-        return true;
-    }
-
 
 	@Override
 	public EngineOptions onCreateEngineOptions() {
