@@ -3,7 +3,7 @@ HJ3game
 
 Game development project repo
 
-A Tetris game for Android
+A Tetris game for Android using AndEngine. 
 
 Developers
 ==========
