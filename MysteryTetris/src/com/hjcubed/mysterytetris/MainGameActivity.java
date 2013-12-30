@@ -8,13 +8,12 @@ import org.andengine.entity.scene.Scene;
 import org.andengine.entity.scene.background.Background;
 import org.andengine.ui.activity.SimpleBaseGameActivity;
 
-import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.Menu;
 
 public class MainGameActivity extends SimpleBaseGameActivity {
 	Camera camera; 
 	Scene scene; 
+	TetrisBoard board;
 
 	@Override
 	public EngineOptions onCreateEngineOptions() {
@@ -34,12 +33,18 @@ public class MainGameActivity extends SimpleBaseGameActivity {
 		
 	}
 
-
 	@Override
 	protected Scene onCreateScene() {
 		scene = new Scene(); 
 		scene.setBackground(new Background(0,0,0));
+		createBoard(scene);
 		return scene;
+	}
+	
+	public TetrisBoard createBoard(Scene scene) {
+		board = new TetrisBoard(scene);
+		TetrisBoard.Square sq= board.new Square();
+		return board;
 	}
     
 }
