@@ -73,7 +73,7 @@ public class TetrisBoard {
 	        u4 = new Unit(unitWidth,unitWidth,unitWidth,unitWidth);*/
 	        
 	        Rectangle u1 = new Rectangle(0,0,unitWidth,unitWidth, vbo); 
-	        Rectangle u2 = new Rectangle(0,unitWidth,unitWidth,unitWidth, vbo);
+	        Rectangle u2 = new Rectangle(50,unitWidth,unitWidth,unitWidth, vbo);
 	        Rectangle u3 = new Rectangle(unitWidth,0,unitWidth,unitWidth, vbo);
 	        Rectangle u4 = new Rectangle(unitWidth,unitWidth,unitWidth,unitWidth, vbo); 
 	        groupOfUnits = new Entity(0, 0);
